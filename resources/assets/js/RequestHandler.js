@@ -15,8 +15,8 @@ class RequestHandler {
         showFormModal();
         // Set the button action for insertion
         $('#button_action').val('insert');
-        // Set the button value to 'تایید'
-        $('#action').val('تایید');
+        // Set the button value to 'insert'
+        $('#action').val('insert');
         // Set the sign * as 'required'
         $('.required-heading .input-required').show();
         // Set the selectbox values to null
@@ -83,8 +83,8 @@ class RequestHandler {
         $('#id').val(id);
         // Set the button action for update
         $('#button_action').val('update');
-        // Set the button value to 'ثبت تغییرات'
-        $('#action').val('ثبت تغییرات');
+        // Set the button value to 'update'
+        $('#action').val('Update');
         // Remove "required field" from heading
         $('.required-heading .input-required').hide();
     }
@@ -105,7 +105,7 @@ function success(data, modal) {
     // Hide the current modal
     $(modal).modal('hide');
     // Show the success modal if the modal was #formModal
-    modal === "#formModal" && $('#successModal').modal('show');
+    modal === "#formModal" && $('#success').modal('show');
     // Empty the form output
     emptyFormOutput();
     // Reset the form
