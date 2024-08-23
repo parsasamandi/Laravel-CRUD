@@ -3,6 +3,9 @@
 
 @section('content')
 
+  {{-- Success Modal To Show After Insertion --}}
+  @include('includes.successModal')
+
   {{-- Header --}}
   <x-header pageName="Admin" buttonValue="admin">
     <x-slot name="table">
@@ -56,7 +59,7 @@
 
       // Record modal
       $('#create_record').click(function () {
-        action.openModal();
+        action.openInsertionModal();
       });
 
       // Insert
